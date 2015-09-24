@@ -33,6 +33,14 @@ The from address for your automated emails. Example::
 
   SN_EMAIL_FROM = 'noreply@myshop.com'
 
+Connecting signals
++++++++++++++++++++
+
+
+  SN_BIND_PAYMENT_INSTRUCTION_TO = [] # list with string 'confirmed' or 'completed'
+  SN_BIND_NEW_ORDER_NOTIFICATION_TO = [] # ^^
+
+
 SN_OWNERS
 ++++++++++
 
@@ -100,3 +108,17 @@ Example::
   pip install -e git+git://github.com/divio/django-shop.git#egg=shop
   cd shop_simplenotifications/tests
   ./runtests.py
+
+
+CHANGELOG
+=========
+
+
+settings.py
+-----------
+
+SN_BIND_PAYMENT_INSTRUCTION_TO = [] # list with string 'confirmed' or 'completed'
+SN_BIND_NEW_ORDER_NOTIFICATION_TO = [] # ^^
+
+default is still confirmed
+
